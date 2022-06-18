@@ -38,7 +38,7 @@ print(new_list_of_nums)
 ```
 
 # 2. reduce
-reduce is the Pythonic version of foldl in Functional Programming, it can be used to apply operations that need can accumulate the iterable, such as summing numbers, or concatenation of strings.
+reduce is the Pythonic version of foldl in Functional Programming, it can be used to apply operations that can accumulate the iterable, such as summing numbers, or concatenation of strings.
 
 The reduce in Python is available in the functools module
 
@@ -55,7 +55,7 @@ import functools
 
 list_of_nums = list(range(1, 101))
 
-sum_of_nums = functools.reduce(lambda x, y: x + y, list_of_nums, 0)
+sum_of_nums = functools.reduce(lambda x, y: x + y, list_of_nums)
 
 print(sum_of_nums)
 
